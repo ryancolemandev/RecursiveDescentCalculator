@@ -15,7 +15,7 @@ static void skipSpaces(Parser *p)
 
 static void error(const char *msg, Parser *p)
 {
-    printf(stderr, "Error: %s near \"%s\"\n", msg, p->s);
+    fprintf(stderr, "Error: %s near \"%s\"\n", msg, p->s);
     exit(1);
 }
 
